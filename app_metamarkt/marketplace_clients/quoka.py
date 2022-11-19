@@ -1,8 +1,4 @@
 import requests
-from requests_html import HTMLSession
-from selenium import webdriver
-from seleniumrequests import Chrome
-from selenium.webdriver.common.by import By
 from parsel import Selector
 
 
@@ -31,6 +27,7 @@ def fetch(search_phrase):
         title = sel1.xpath('//li/div[2]/a//text()').getall()
         description = sel1.xpath('//li/div[2]/div//text()').getall()
         price = sel1.xpath('//li/div[3]/p[1]//text()').getall()
+        price = price[0] if len(price) > 0 else ''
         postalCode = sel1.xpath('//li/div[3]/p[2]//span[contains(@class, "postal-code")]//text()').getall()
         date = sel1.xpath('//li/div[4]//text()').getall()
         ret.append({"img": img,

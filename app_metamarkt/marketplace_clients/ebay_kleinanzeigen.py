@@ -46,12 +46,14 @@ def fetchData( query = "", location = "", radius = 0 ) -> list:
         print()
         print(str(item.select("div")))
 
-        item_parsed = BeautifulSoup( str(item.article), 'html.parser' )
-
+        # item_parsed = BeautifulSoup( str(item.article), 'html.parser' )
         # parsed = BeautifulSoup( item.html, 'html.parser' )
+
+        title = item.find( "a", {"class": "ellipsis"} )
+        img_source = item.find( "div", {"class": "srpimagebox"} )['data-imgsrc']
         results.append({
-            'title': item_parsed.select_one("ellipsis"),
-            'link': None
+            'title': title.text,
+
         })
 
 
