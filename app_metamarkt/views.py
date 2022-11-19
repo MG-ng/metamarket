@@ -1,5 +1,12 @@
 from django.shortcuts import render
+from django.views import generic
 
 
-def index(request):
-    return render(request, 'index.html')
+
+class IndexView(generic.ListView):
+    template_name = "app_metamarkt/index.html"
+
+    def get_queryset(self):
+        pass
+
+
