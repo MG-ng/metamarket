@@ -59,7 +59,9 @@
     <section class="inner-page">
       <div class="container">
         <p>
-          {{ search_phrase }}
+          {% for res in results %}
+           {{ res.title }} <br />
+          {% endfor %}
         </p>
       </div>
     </section>
