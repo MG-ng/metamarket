@@ -1,6 +1,6 @@
 /**
-* Template Name: Ninestars - v4.9.1
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+* Template Name: Metamarkt - v4.9.1
+* Template URL: https://bootstrapmade.com/Metamarkt-free-bootstrap-3-theme-for-creative/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
