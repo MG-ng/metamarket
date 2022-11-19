@@ -2,11 +2,10 @@ from django.shortcuts import render
 from django.views import generic
 
 
-
-class IndexView(generic.ListView):
-    template_name = "app_metamarkt/index.html"
-
-    def get_queryset(self):
+def index(request):
+    if request.method == "POST":
         pass
+    elif request.method == "GET":
+        return render(request, "app_metamarkt/index.html")
 
 
