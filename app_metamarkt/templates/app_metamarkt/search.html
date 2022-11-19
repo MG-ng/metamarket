@@ -58,16 +58,48 @@
     </section><!-- End Breadcrumbs Section -->
     <section class="inner-page">
       <div class="container">
+
         <p>
+          {{ row.price|join:"" }}<br />
           {% for row in results %}
           <img src='{{ row.img|join:"" }}' />
           {{ row.title|join:"" }}<br />
           {{ row.description|join:"" }}<br />
-          {{ row.price|join:"" }}<br />
           {{ row.zipCode|join:"" }}<br />
           {{ row.date|join:"" }}<br /><br />
           {% endfor %}
         </p>
+
+
+        <div class="row">
+          {% for row in results %}
+
+            <div class="col-sm-6">
+              <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="{{ row.img_src }}" class="card-img" alt="product image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ row.title }}</h5>
+                      <p class="card-text">{{ row.description }}</p>
+                      <p class="card-text "><small class="font-weight-bold">{{ row.price }} {{ row.priceUnit }}</small></p>
+                      <a href="{{ row.url }}" class="btn btn-primary">{{ row.provider }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          {% endfor %}
+        </div>
+
+
+
+
+
+
       </div>
     </section>
 
