@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import generic
+from app_metamarkt.marketplace_clients import quoka
 
 
 def index(request):
@@ -48,6 +49,7 @@ In unserem Hauhalt gibt es keine Tiere, wir sind Nichtraucher. Verkauf erfolgt v
                     'date': "03.11.2022",
                     'views': 115
                 }]
+            results = quoka.fetch(search_phrase)
         else:
             results = None
         return render(request, "app_metamarkt/search.html", {"results": results})
