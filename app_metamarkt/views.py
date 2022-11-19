@@ -52,7 +52,7 @@ def search(request):
                     'provider': "ebay-kleinanzeigen",
                     'url': "https://www.ebay-kleinanzeigen.de/s-anzeige/bmw-m3-f80-competition/2276986346-216-6479"
                 }]
-            # results = ebay_kleinanzeigen.fetchData( search_phrase )
+            results = ebay_kleinanzeigen.fetchData( search_phrase )
             results.extend( quoka.fetch(search_phrase) )
         else:
             results = None

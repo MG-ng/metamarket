@@ -50,10 +50,18 @@ def fetchData( query = "", location = "", radius = 0 ) -> list:
         # parsed = BeautifulSoup( item.html, 'html.parser' )
 
         title = item.find( "a", {"class": "ellipsis"} )
-        img_source = item.find( "div", {"class": "srpimagebox"} )['data-imgsrc']
+        img_src = item.find( "div", {"class": "srpimagebox"} )
+        description = item.find( "p", {"class": "aditem-main--middle--description"} ).text
+        price = item.find( "p", {"class": "aditem-main--middle--price-shipping--price"} ).text.strip()
+
+
         results.append({
             'title': title.text,
-
+            'img_src': img_src,
+            'description': description,
+            'price': price,
+            'priceUnit': "EUR",
+            'provider': "eBay Kleinanzeigen"
         })
 
 
