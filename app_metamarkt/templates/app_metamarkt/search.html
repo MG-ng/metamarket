@@ -59,10 +59,14 @@
     <section class="inner-page">
       <div class="container">
         <p>
-          {{ results }}
-<!--          {% for res in results %}-->
-<!--           {{ res.title }} <br />-->
-<!--          {% endfor %}-->
+          {% for row in results %}
+          <img src='{{ row.img|join:"" }}' />
+          {{ row.title|join:"" }}<br />
+          {{ row.description|join:"" }}<br />
+          {{ row.price|join:"" }}<br />
+          {{ row.zipCode|join:"" }}<br />
+          {{ row.date|join:"" }}<br /><br />
+          {% endfor %}
         </p>
       </div>
     </section>
