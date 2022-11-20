@@ -56,7 +56,7 @@
           <div class="col-lg-6">
             <h1>Durchsuchen Sie alle Märkte mit nur einer Suche</h1>
             <form action="/suche" method="get">
-              <input type="email" name="email" value="{{ search_phrase|default_if_none:"" }}"><input type="submit" value="Finden">
+              <input class="form-control mr-sm-2" type="search" name="q" placeholder="Winterreifen, Laptop, Couch" value='{{ search_phrase|default_if_none:"" }}'><input class="btn-get-started" type="submit" value="Finden">
             </form>
 
           </div>
