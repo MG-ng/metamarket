@@ -28,22 +28,11 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Metamarkt - v4.9.1
-  * Template URL: https://bootstrapmade.com/Metamarkt-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
 {% include 'app_metamarkt/navbar.html' %}
-
-
-
-
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -55,7 +44,7 @@
 
           <form action="{% url 'search' %}" class="form-inline" method="get">
 <!--            {% csrf_token %}-->
-            <input name="q" class="form-control mr-sm-2" type="search" placeholder="Winterreifen, Laptop, Couch" aria-label="Search">
+              <input name="q" class="form-control mr-sm-2" type="search" placeholder="Winterreifen, Laptop, Couch" aria-label="Search">
 <!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
 <!--            <div>-->
               <button class="btn-get-started" type="submit">Search</button>
@@ -116,7 +105,7 @@
             <img src="{% static 'img/about-img.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Voluptatem dignissimos provident quasi</h3>
+            <h3 data-aos="fade-up">Mit Metamarkt wird inserieren zum Kinderspiel und Sie erhalten bis zu 4x mehr Interessenten für Ihre Produkte</h3>
             <p data-aos="fade-up" data-aos-delay="100">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
             </p>
@@ -144,14 +133,14 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Check out the great services we offer</p>
+          <p>Unsere Dienstleistungen</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="">Bequeme Anzeigen</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
             </div>
           </div>
@@ -159,7 +148,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="">Überall gleichzeitig inserieren</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
             </div>
           </div>
@@ -167,7 +156,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <h4 class="title"><a href="">Innerhalb kürzester Zeit online</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
             </div>
           </div>
@@ -175,7 +164,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <h4 class="title"><a href="">4x häufiger gesehen werden</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
             </div>
           </div>
@@ -191,7 +180,7 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Check out our beautifull portfolio</p>
+          <p>Durchstöbern Sie die beliebtesten Produkte</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -350,7 +339,7 @@
         <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
           <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Wieviele Maktplätze werden gleichzeitig durchsucht? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -359,7 +348,7 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Was kostet es mit einem Inserat überall zu veröffentlichen? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -414,7 +403,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Team</h2>
-          <p>Our team is always here to help</p>
+          <p>Unser Team unterstützt Sie bei Ihrer Suche</p>
         </div>
 
         <div class="row">
@@ -502,7 +491,7 @@
 
         <div class="section-title">
           <h2>Contact Us</h2>
-          <p>Contact us the get started</p>
+          <p>Kontaktieren Sie uns</p>
         </div>
 
         <div class="row">
