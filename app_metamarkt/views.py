@@ -62,7 +62,7 @@ def search(request):
 
 
 def post(request):
-    return render(request, "app_metamarkt/our-partners.html")
+    return render(request, "app_metamarkt/post.html")
 
 def our_partner(request):
     return render(request, "app_metamarkt/our-partners.html")
