@@ -53,8 +53,9 @@ def search(request):
         #             'provider': "ebay-kleinanzeigen",
         #             'url': "https://www.ebay-kleinanzeigen.de/s-anzeige/bmw-m3-f80-competition/2276986346-216-6479"
         #         }]
-            results = ebay_kleinanzeigen.fetchData(search_phrase)
-            results.extend(quoka.fetch(search_phrase))
+            l1 = ebay_kleinanzeigen.fetchData(search_phrase)
+            l2 = quoka.fetch(search_phrase)
+            results = sum(zip(l1, l2+[0]), ())[:-1]
         else:
             results = None
         return render(request, "app_metamarkt/search.html", {"results": results, "search_phrase": search_phrase})

@@ -25,7 +25,6 @@ def fetchData( query = "", location = "", radius = 0 ) -> list:
                      timeout = 10,
                      cookies = {
                      } )
-    # print(f"{r.text=}")
 
 
     site = BeautifulSoup( r.text, 'html.parser' )
@@ -33,35 +32,23 @@ def fetchData( query = "", location = "", radius = 0 ) -> list:
     results = []
 
     for item in site.find_all( "li", {"class": "lazyload-item"} ):
-        # l = site.find_all( "li", {"class": "lazyload-item"} )
-        # print("l[0].html")
-        # print(l[0].html)
-        # print("l[0].text")
-        # print(l[0].text)
-        # print("l[0].getText")
-        # print(l[0].getText)
-        # print(f"{l[0].article.getText=}")
-
-        print()
-        print()
-        print(str(item.select("div")))
-
-        # item_parsed = BeautifulSoup( str(item.article), 'html.parser' )
-        # parsed = BeautifulSoup( item.html, 'html.parser' )
-
         title = item.find( "a", {"class": "ellipsis"} )
-        img_src = item.find( "div", {"class": "srpimagebox"} )
+        url = domain + title['href']
+        try:
+            img_src = item.find( "div", {"class": "srpimagebox"} )['data-imgsrcretina'].split(" ")[0]
+        except:
+            img_src = "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
         description = item.find( "p", {"class": "aditem-main--middle--description"} ).text
         price = item.find( "p", {"class": "aditem-main--middle--price-shipping--price"} ).text.strip()
-
-
         results.append({
             'title': title.text,
             'img': img_src,
             'description': description,
             'price': price,
             'priceUnit': "EUR",
-            'provider': "eBay Kleinanzeigen"
+            'provider': "eBay Kleinanzeigen",
+            'url': url,
+            'color': "#91B53D"
         })
 
     return results

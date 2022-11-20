@@ -80,7 +80,8 @@
                       <h5 class="card-title">{{ row.title }}</h5>
                       <p class="card-text">{{ row.description }}</p>
                       <p class="card-text "><small class="font-weight-bold">{{ row.price }} {{ row.priceUnit }}</small></p>
-                      <a href="{{ row.url }}" target="_blank" class="btn btn-primary">{{ row.provider }}</a>
+                      <a href="{{ row.url }}" target="_blank" class="btn btn-primary"
+                         style="background-color:{{row.color}}; border-width: 0">{{ row.provider }}</a>
                     </div>
                   </div>
                 </div>
