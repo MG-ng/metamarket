@@ -8,30 +8,13 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social)
 
 Metamarkt allows everyone to search in multiple marketplaces at once easily. 
-You just have to put in your search query once and can get a collection of the third party marketplaces results.
+You just have to type in your search query once and get a collection of the third party marketplaces results.
 
+## Installing Metamarkt
+1. `pip3 install bs4 requests parsel`
+2. `python3 manage.py runserver`
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
-
-## Installing <project_name>
-
-To install <project_name>, follow these steps:
-
-Linux and macOS:
-```
-<install_command>
-```
-
-Windows:
-```
-<install_command>
-```
+That's it!
 ## Using <project_name>
 
 To use <project_name>, follow these steps:
