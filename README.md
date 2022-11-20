@@ -7,9 +7,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social)
 
-Metamarkt is a platform that allows everyone to do a search in multiple marketplaces easily. 
-
-You just have to put in your search query once and can get 
+Metamarkt allows everyone to search in multiple marketplaces at once easily. 
+You just have to put in your search query once and can get a collection of the third party marketplaces results.
 
 
 ## Prerequisites
