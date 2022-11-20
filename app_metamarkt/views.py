@@ -57,6 +57,12 @@ def search(request):
             results.extend(quoka.fetch(search_phrase))
         else:
             results = None
-        return render(request, "app_metamarkt/search.html", {"results": results})
+        return render(request, "app_metamarkt/search.html", {"results": results, "search_phrase": search_phrase})
 
+
+def post(request):
+    return render(request, "app_metamarkt/our-partners.html")
+
+def our_partner(request):
+    return render(request, "app_metamarkt/our-partners.html")
 
