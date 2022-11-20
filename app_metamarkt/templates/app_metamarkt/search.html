@@ -27,13 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Metamarkt - v4.9.1
-  * Template URL: https://bootstrapmade.com/Metamarkt-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -60,14 +53,16 @@
       <div class="container">
 
         <p>
-          {{ row.price }}<br />
-          {% for row in results %}
-          <img src='{{ row.img|join:"" }}' />
-          {{ row.title|join:"" }}<br />
-          {{ row.description|join:"" }}<br />
-          {{ row.zipCode|join:"" }}<br />
-          {{ row.date|join:"" }}<br /><br />
-          {% endfor %}
+
+<!--          {% for row in results %}-->
+<!--            {{ row }}-->
+<!--            <img src='{{ row.img|join:"" }}' />-->
+<!--            <a href="{{ row.url }}">{{ row.title|join:"" }}</a><br />-->
+<!--            {{ row.description|join:"" }}<br />-->
+<!--            {{ row.zipCode|join:"" }}<br />-->
+<!--            {{ row.date|join:"" }}<br /><br />-->
+<!--          -->
+<!--          {% endfor %}-->
         </p>
 
 
@@ -78,7 +73,7 @@
               <div class="card mb-3" style="max-width: 1000px;">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="{{ row.img_src }}" class="card-img" alt="product image">
+                    <img src="{{ row.img }}" class="card-img" alt="product image">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
