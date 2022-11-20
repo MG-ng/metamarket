@@ -30,16 +30,17 @@ def fetch(search_phrase):
         url = sel1.xpath('//li/div[2]/a/@href').getall()
         description = sel1.xpath('//li/div[2]/div//text()').getall()
         price = sel1.xpath('//li/div[3]/p[1]//text()').getall()
-        price = price[0] if len(price) > 0 else ''
         postalCode = sel1.xpath('//li/div[3]/p[2]//span[contains(@class, "postal-code")]//text()').getall()
         date = sel1.xpath('//li/div[4]//text()').getall()
         ret.append({"img": img[0],
                     "title": title[0],
                     "description": description[0],
                     "price": price[0],
+                    "priceUnit": "EUR",
                     "zipCode": postalCode[0],
                     "date": date,
                     "url": "https://www.quoka.de" + url[0],
+                    "provider": "quoka.de"
                     })
 
     # session = HTMLSession()

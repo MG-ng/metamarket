@@ -57,15 +57,12 @@ def fetchData( query = "", location = "", radius = 0 ) -> list:
 
         results.append({
             'title': title.text,
-            'img_src': img_src,
+            'img': img_src,
             'description': description,
             'price': price,
             'priceUnit': "EUR",
             'provider': "eBay Kleinanzeigen"
         })
-
-
-    print(results)
 
     return results
 
