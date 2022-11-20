@@ -1,2 +1,2 @@
-# metamarkt
-One Market to rule them all
+# Metamarkt - all marketplaces in One
+
