@@ -18,3 +18,6 @@ That's it!
 
 ## Demo
 
+<img src='demo-pics/demo1.png'>
+<img src='demo-pics/demo2.png'>
+<img src='demo-pics/demo3.png'>
