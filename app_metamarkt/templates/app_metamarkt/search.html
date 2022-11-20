@@ -54,11 +54,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h1>Durchsuchen Sie alle Märkte mit nur einer Suche</h1>
             <form action="/suche" method="get">
-              <input type="email" name="email" value="{{ search_phrase }}"><input type="submit" value="Finden">
+              <input type="email" name="email" value="{{ search_phrase|default_if_none:"" }}"><input type="submit" value="Finden">
             </form>
+
           </div>
         </div>
       </div>
